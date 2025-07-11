@@ -38,6 +38,13 @@
                                 <!-- https://startbootstrap.com/solution/contact-forms-->
                                 <!-- to get an API token!-->
                                 <form id="contactForm" data-sb-form-api-token="API_TOKEN">
+
+                                <!-- Name input-->
+                                <div class="form-floating mb-3">
+                                        <input class="form-control" id="name" type="text" placeholder="Digite seu nome..." data-sb-validations="required" />
+                                        <label for="name">Nome</label>
+                                        <div class="invalid-feedback" data-sb-feedback="name:required">O nome é obrigatório.</div>
+                                    </div>
                                     
                                     <!-- Email address input-->
                                     <div class="form-floating mb-3">
@@ -59,7 +66,7 @@
                                     <!-- an error submitting the form-->
                                     <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">Error sending message!</div></div>
                                     <!-- Submit Button-->
-                                    <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Entrar</button></div>
+                                    <div class="d-grid"><button class="btn btn-primary btn-lg disabled" id="submitButton" type="submit">Cadastre-se</button></div>
                                 </form>
                             </div>
                         </div>
